@@ -6,6 +6,8 @@
 package codigo;
 
 import codigo.formas.Circulo;
+import codigo.formas.Forma;
+import codigo.formas.Pentagono;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -20,6 +22,7 @@ public class VentanaPaint extends javax.swing.JFrame {
     BufferedImage buffer = null;
     Graphics2D bufferGraphics , jpanelGraphics = null;
     Circulo miCirculo = null;
+    Forma miForma = null;
     
     /**
      * Creates new form VentanaPaint
@@ -122,7 +125,9 @@ public class VentanaPaint extends javax.swing.JFrame {
                 bufferGraphics.setColor(panelColores2.colorSeleccionado);
                 bufferGraphics.fillOval(evt.getX(), evt.getY(), 4, 4);
                 break;
-            case 1 :    miCirculo.dibujante(bufferGraphics, evt.getX());break;
+            case 1 : miCirculo.dibujante(bufferGraphics, evt.getX()); break;
+            case 5 : miForma.dibujante(bufferGraphics, evt.getX(), evt.getY()); break;
+                
             
         }
         repaint(0,0,1,1); 
@@ -134,7 +139,9 @@ public class VentanaPaint extends javax.swing.JFrame {
             case 1 : miCirculo = new Circulo(evt.getX(), evt.getY(), 1, panelColores2.colorSeleccionado , false);
                      miCirculo.dibujante(bufferGraphics, evt.getX());
                 break;
-            
+            case 5 : miForma = new Pentagono(evt.getX(), evt.getY(), 5, panelColores2.colorSeleccionado , false);
+                     miForma.dibujante(bufferGraphics, evt.getX(), evt.getY());
+                break;
         }
     }//GEN-LAST:event_jPanel1MousePressed
     
