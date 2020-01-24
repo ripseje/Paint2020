@@ -16,6 +16,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+import java.util.Random;
 
 /**
  *
@@ -27,6 +28,7 @@ public class VentanaPaint extends javax.swing.JFrame {
     Graphics2D bufferGraphics, bufferGraphics2 , jpanelGraphics = null;
     Circulo miCirculo = null;
     Forma miForma = new Forma(-1, -1, 0, Color.WHITE, false); //para que la forma no de error
+    Random random = new Random();
     
     /**
      * Creates new form VentanaPaint
@@ -137,6 +139,10 @@ public class VentanaPaint extends javax.swing.JFrame {
         switch(herramientas1.formaElegida){
             case 0 : 
                 bufferGraphics2.setColor(panelColores2.colorSeleccionado);
+                bufferGraphics2.fillOval(evt.getX(), evt.getY(), panelColores2.tam1, panelColores2.tam1);
+                break;
+            case 100 : 
+                bufferGraphics2.setColor(Color.WHITE);
                 bufferGraphics2.fillOval(evt.getX(), evt.getY(), panelColores2.tam1, panelColores2.tam1);
                 break;
             case 1 : miCirculo.dibujante(bufferGraphics, evt.getX()); break;

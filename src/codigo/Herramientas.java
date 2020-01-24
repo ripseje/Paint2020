@@ -33,63 +33,65 @@ public class Herramientas extends javax.swing.JPanel {
     private void initComponents() {
 
         jButton4 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        circulo = new javax.swing.JButton();
+        rectangulo = new javax.swing.JButton();
+        pentagono = new javax.swing.JButton();
+        triangulo = new javax.swing.JButton();
+        molino = new javax.swing.JButton();
+        recta = new javax.swing.JButton();
         rellenoCheck = new javax.swing.JCheckBox();
+        lapiz = new javax.swing.JButton();
+        goma = new javax.swing.JButton();
 
         jButton4.setText("jButton4");
 
-        jButton1.setText("Círculo");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        circulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Circulo.png"))); // NOI18N
+        circulo.setBorder(null);
+        circulo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                circuloActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Cuadrado");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        rectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Cuadrado.png"))); // NOI18N
+        rectangulo.setActionCommand("");
+        rectangulo.setBorder(null);
+        rectangulo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                rectanguloActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Pentágono");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        pentagono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pentagono.png"))); // NOI18N
+        pentagono.setBorder(null);
+        pentagono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                pentagonoActionPerformed(evt);
             }
         });
 
-        jButton5.setText("Triángulo");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        triangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/triangulo.png"))); // NOI18N
+        triangulo.setBorder(null);
+        triangulo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                trianguloActionPerformed(evt);
             }
         });
 
-        jButton6.setText("Pincel");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        molino.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/estrella.png"))); // NOI18N
+        molino.setToolTipText("");
+        molino.setBorder(null);
+        molino.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                molinoActionPerformed(evt);
             }
         });
 
-        jButton7.setText("Estrella");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        recta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Recta.png"))); // NOI18N
+        recta.setBorder(null);
+        recta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-
-        jButton8.setText("Recta");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                rectaActionPerformed(evt);
             }
         });
 
@@ -101,85 +103,122 @@ public class Herramientas extends javax.swing.JPanel {
             }
         });
 
+        lapiz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Lapiz.png"))); // NOI18N
+        lapiz.setBorder(null);
+        lapiz.setMaximumSize(new java.awt.Dimension(45, 45));
+        lapiz.setMinimumSize(new java.awt.Dimension(45, 45));
+        lapiz.setPreferredSize(new java.awt.Dimension(45, 45));
+        lapiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lapizActionPerformed(evt);
+            }
+        });
+
+        goma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Goma.png"))); // NOI18N
+        goma.setBorder(null);
+        goma.setMaximumSize(new java.awt.Dimension(45, 45));
+        goma.setMinimumSize(new java.awt.Dimension(45, 45));
+        goma.setPreferredSize(new java.awt.Dimension(45, 45));
+        goma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gomaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(rellenoCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lapiz, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(goma, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(circulo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(rectangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(triangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pentagono, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(molino, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(recta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(rellenoCheck, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jButton6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lapiz, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(goma, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(circulo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rectangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(triangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pentagono, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3)
-                .addGap(18, 18, 18)
-                .addComponent(jButton7)
-                .addGap(18, 18, 18)
-                .addComponent(jButton8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(molino, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(recta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(rellenoCheck)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void circuloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_circuloActionPerformed
         formaElegida = 1;
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_circuloActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void rectanguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rectanguloActionPerformed
         formaElegida = 4;
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_rectanguloActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void pentagonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pentagonoActionPerformed
         formaElegida = 5;
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_pentagonoActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void trianguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trianguloActionPerformed
         formaElegida = 3;
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_trianguloActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        formaElegida = 0;
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void molinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_molinoActionPerformed
         formaElegida = 256;
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_molinoActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void rectaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rectaActionPerformed
         formaElegida = 2;
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_rectaActionPerformed
 
     private void rellenoCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rellenoCheckActionPerformed
         relleno = rellenoCheck.isSelected();
     }//GEN-LAST:event_rellenoCheckActionPerformed
 
+    private void lapizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lapizActionPerformed
+        formaElegida = 0;
+    }//GEN-LAST:event_lapizActionPerformed
+
+    private void gomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gomaActionPerformed
+        formaElegida = 100;
+    }//GEN-LAST:event_gomaActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton circulo;
+    private javax.swing.JButton goma;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton lapiz;
+    private javax.swing.JButton molino;
+    private javax.swing.JButton pentagono;
+    private javax.swing.JButton recta;
+    private javax.swing.JButton rectangulo;
     private javax.swing.JCheckBox rellenoCheck;
+    private javax.swing.JButton triangulo;
     // End of variables declaration//GEN-END:variables
 }
