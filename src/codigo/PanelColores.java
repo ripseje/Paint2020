@@ -73,9 +73,13 @@ public class PanelColores extends javax.swing.JPanel {
         swamp = new javax.swing.JLabel();
 
         rojo.setBackground(new java.awt.Color(255, 0, 0));
+        rojo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         rojo.setMaximumSize(new java.awt.Dimension(20, 20));
         rojo.setMinimumSize(new java.awt.Dimension(20, 20));
         rojo.setOpaque(true);
+        rojo.setPreferredSize(new java.awt.Dimension(20, 20));
+        rojo.setRequestFocusEnabled(false);
+        rojo.setVerifyInputWhenFocusTarget(false);
         rojo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 rojoMouseClicked(evt);
@@ -83,7 +87,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         negro.setBackground(new java.awt.Color(0, 0, 0));
+        negro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        negro.setMaximumSize(new java.awt.Dimension(20, 20));
+        negro.setMinimumSize(new java.awt.Dimension(20, 20));
         negro.setOpaque(true);
+        negro.setPreferredSize(new java.awt.Dimension(20, 20));
+        negro.setRequestFocusEnabled(false);
+        negro.setVerifyInputWhenFocusTarget(false);
         negro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 negroMouseClicked(evt);
@@ -91,9 +101,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         verde.setBackground(new java.awt.Color(0, 204, 0));
+        verde.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         verde.setMaximumSize(new java.awt.Dimension(20, 20));
         verde.setMinimumSize(new java.awt.Dimension(20, 20));
         verde.setOpaque(true);
+        verde.setPreferredSize(new java.awt.Dimension(20, 20));
+        verde.setRequestFocusEnabled(false);
+        verde.setVerifyInputWhenFocusTarget(false);
         verde.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 verdeMouseClicked(evt);
@@ -101,9 +115,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         amarillo.setBackground(new java.awt.Color(255, 255, 0));
+        amarillo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         amarillo.setMaximumSize(new java.awt.Dimension(20, 20));
         amarillo.setMinimumSize(new java.awt.Dimension(20, 20));
         amarillo.setOpaque(true);
+        amarillo.setPreferredSize(new java.awt.Dimension(20, 20));
+        amarillo.setRequestFocusEnabled(false);
+        amarillo.setVerifyInputWhenFocusTarget(false);
         amarillo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 amarilloMouseClicked(evt);
@@ -111,7 +129,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         blanco.setBackground(new java.awt.Color(255, 255, 255));
+        blanco.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        blanco.setMaximumSize(new java.awt.Dimension(20, 20));
+        blanco.setMinimumSize(new java.awt.Dimension(20, 20));
         blanco.setOpaque(true);
+        blanco.setPreferredSize(new java.awt.Dimension(20, 20));
+        blanco.setRequestFocusEnabled(false);
+        blanco.setVerifyInputWhenFocusTarget(false);
         blanco.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 blancoMouseClicked(evt);
@@ -119,7 +143,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         gris.setBackground(new java.awt.Color(102, 102, 102));
+        gris.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        gris.setMaximumSize(new java.awt.Dimension(20, 20));
+        gris.setMinimumSize(new java.awt.Dimension(20, 20));
         gris.setOpaque(true);
+        gris.setPreferredSize(new java.awt.Dimension(20, 20));
+        gris.setRequestFocusEnabled(false);
+        gris.setVerifyInputWhenFocusTarget(false);
         gris.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 grisMouseClicked(evt);
@@ -127,7 +157,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         grisClaro.setBackground(new java.awt.Color(204, 204, 204));
+        grisClaro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        grisClaro.setMaximumSize(new java.awt.Dimension(20, 20));
+        grisClaro.setMinimumSize(new java.awt.Dimension(20, 20));
         grisClaro.setOpaque(true);
+        grisClaro.setPreferredSize(new java.awt.Dimension(20, 20));
+        grisClaro.setRequestFocusEnabled(false);
+        grisClaro.setVerifyInputWhenFocusTarget(false);
         grisClaro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 grisClaroMouseClicked(evt);
@@ -135,9 +171,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         granate.setBackground(new java.awt.Color(153, 0, 0));
+        granate.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         granate.setMaximumSize(new java.awt.Dimension(20, 20));
         granate.setMinimumSize(new java.awt.Dimension(20, 20));
         granate.setOpaque(true);
+        granate.setPreferredSize(new java.awt.Dimension(20, 20));
+        granate.setRequestFocusEnabled(false);
+        granate.setVerifyInputWhenFocusTarget(false);
         granate.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 granateMouseClicked(evt);
@@ -145,9 +185,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         mostaza.setBackground(new java.awt.Color(153, 153, 0));
+        mostaza.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         mostaza.setMaximumSize(new java.awt.Dimension(20, 20));
         mostaza.setMinimumSize(new java.awt.Dimension(20, 20));
         mostaza.setOpaque(true);
+        mostaza.setPreferredSize(new java.awt.Dimension(20, 20));
+        mostaza.setRequestFocusEnabled(false);
+        mostaza.setVerifyInputWhenFocusTarget(false);
         mostaza.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mostazaMouseClicked(evt);
@@ -155,9 +199,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         verdeOscuro.setBackground(new java.awt.Color(0, 102, 0));
+        verdeOscuro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         verdeOscuro.setMaximumSize(new java.awt.Dimension(20, 20));
         verdeOscuro.setMinimumSize(new java.awt.Dimension(20, 20));
         verdeOscuro.setOpaque(true);
+        verdeOscuro.setPreferredSize(new java.awt.Dimension(20, 20));
+        verdeOscuro.setRequestFocusEnabled(false);
+        verdeOscuro.setVerifyInputWhenFocusTarget(false);
         verdeOscuro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 verdeOscuroMouseClicked(evt);
@@ -165,9 +213,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         cian.setBackground(new java.awt.Color(51, 255, 255));
+        cian.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         cian.setMaximumSize(new java.awt.Dimension(20, 20));
         cian.setMinimumSize(new java.awt.Dimension(20, 20));
         cian.setOpaque(true);
+        cian.setPreferredSize(new java.awt.Dimension(20, 20));
+        cian.setRequestFocusEnabled(false);
+        cian.setVerifyInputWhenFocusTarget(false);
         cian.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cianMouseClicked(evt);
@@ -175,9 +227,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         cianOscuro.setBackground(new java.awt.Color(0, 153, 153));
+        cianOscuro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         cianOscuro.setMaximumSize(new java.awt.Dimension(20, 20));
         cianOscuro.setMinimumSize(new java.awt.Dimension(20, 20));
         cianOscuro.setOpaque(true);
+        cianOscuro.setPreferredSize(new java.awt.Dimension(20, 20));
+        cianOscuro.setRequestFocusEnabled(false);
+        cianOscuro.setVerifyInputWhenFocusTarget(false);
         cianOscuro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cianOscuroMouseClicked(evt);
@@ -185,9 +241,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         magenta.setBackground(new java.awt.Color(255, 0, 204));
+        magenta.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         magenta.setMaximumSize(new java.awt.Dimension(20, 20));
         magenta.setMinimumSize(new java.awt.Dimension(20, 20));
         magenta.setOpaque(true);
+        magenta.setPreferredSize(new java.awt.Dimension(20, 20));
+        magenta.setRequestFocusEnabled(false);
+        magenta.setVerifyInputWhenFocusTarget(false);
         magenta.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 magentaMouseClicked(evt);
@@ -195,7 +255,14 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         morado.setBackground(new java.awt.Color(102, 0, 102));
+        morado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        morado.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        morado.setMaximumSize(new java.awt.Dimension(20, 20));
+        morado.setMinimumSize(new java.awt.Dimension(20, 20));
         morado.setOpaque(true);
+        morado.setPreferredSize(new java.awt.Dimension(20, 20));
+        morado.setRequestFocusEnabled(false);
+        morado.setVerifyInputWhenFocusTarget(false);
         morado.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 moradoMouseClicked(evt);
@@ -203,9 +270,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         mantequilla.setBackground(new java.awt.Color(255, 255, 153));
+        mantequilla.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         mantequilla.setMaximumSize(new java.awt.Dimension(20, 20));
         mantequilla.setMinimumSize(new java.awt.Dimension(20, 20));
         mantequilla.setOpaque(true);
+        mantequilla.setPreferredSize(new java.awt.Dimension(20, 20));
+        mantequilla.setRequestFocusEnabled(false);
+        mantequilla.setVerifyInputWhenFocusTarget(false);
         mantequilla.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mantequillaMouseClicked(evt);
@@ -213,7 +284,14 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         manteca.setBackground(new java.awt.Color(220, 220, 144));
+        manteca.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        manteca.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        manteca.setMaximumSize(new java.awt.Dimension(20, 20));
+        manteca.setMinimumSize(new java.awt.Dimension(20, 20));
         manteca.setOpaque(true);
+        manteca.setPreferredSize(new java.awt.Dimension(20, 20));
+        manteca.setRequestFocusEnabled(false);
+        manteca.setVerifyInputWhenFocusTarget(false);
         manteca.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mantecaMouseClicked(evt);
@@ -221,9 +299,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         menta.setBackground(new java.awt.Color(102, 255, 153));
+        menta.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         menta.setMaximumSize(new java.awt.Dimension(20, 20));
         menta.setMinimumSize(new java.awt.Dimension(20, 20));
         menta.setOpaque(true);
+        menta.setPreferredSize(new java.awt.Dimension(20, 20));
+        menta.setRequestFocusEnabled(false);
+        menta.setVerifyInputWhenFocusTarget(false);
         menta.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mentaMouseClicked(evt);
@@ -231,7 +313,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         hoja.setBackground(new java.awt.Color(0, 102, 51));
+        hoja.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        hoja.setMaximumSize(new java.awt.Dimension(20, 20));
+        hoja.setMinimumSize(new java.awt.Dimension(20, 20));
         hoja.setOpaque(true);
+        hoja.setPreferredSize(new java.awt.Dimension(20, 20));
+        hoja.setRequestFocusEnabled(false);
+        hoja.setVerifyInputWhenFocusTarget(false);
         hoja.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 hojaMouseClicked(evt);
@@ -239,9 +327,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         cielo.setBackground(new java.awt.Color(204, 255, 204));
+        cielo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         cielo.setMaximumSize(new java.awt.Dimension(20, 20));
         cielo.setMinimumSize(new java.awt.Dimension(20, 20));
         cielo.setOpaque(true);
+        cielo.setPreferredSize(new java.awt.Dimension(20, 20));
+        cielo.setRequestFocusEnabled(false);
+        cielo.setVerifyInputWhenFocusTarget(false);
         cielo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cieloMouseClicked(evt);
@@ -249,7 +341,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         cieloNublado.setBackground(new java.awt.Color(0, 102, 102));
+        cieloNublado.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        cieloNublado.setMaximumSize(new java.awt.Dimension(20, 20));
+        cieloNublado.setMinimumSize(new java.awt.Dimension(20, 20));
         cieloNublado.setOpaque(true);
+        cieloNublado.setPreferredSize(new java.awt.Dimension(20, 20));
+        cieloNublado.setRequestFocusEnabled(false);
+        cieloNublado.setVerifyInputWhenFocusTarget(false);
         cieloNublado.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cieloNubladoMouseClicked(evt);
@@ -257,9 +355,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         naranja.setBackground(new java.awt.Color(255, 102, 0));
+        naranja.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         naranja.setMaximumSize(new java.awt.Dimension(20, 20));
         naranja.setMinimumSize(new java.awt.Dimension(20, 20));
         naranja.setOpaque(true);
+        naranja.setPreferredSize(new java.awt.Dimension(20, 20));
+        naranja.setRequestFocusEnabled(false);
+        naranja.setVerifyInputWhenFocusTarget(false);
         naranja.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 naranjaMouseClicked(evt);
@@ -267,7 +369,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         marron.setBackground(new java.awt.Color(153, 51, 0));
+        marron.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        marron.setMaximumSize(new java.awt.Dimension(20, 20));
+        marron.setMinimumSize(new java.awt.Dimension(20, 20));
         marron.setOpaque(true);
+        marron.setPreferredSize(new java.awt.Dimension(20, 20));
+        marron.setRequestFocusEnabled(false);
+        marron.setVerifyInputWhenFocusTarget(false);
         marron.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 marronMouseClicked(evt);
@@ -285,9 +393,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         rosita.setBackground(new java.awt.Color(255, 144, 199));
+        rosita.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         rosita.setMaximumSize(new java.awt.Dimension(20, 20));
         rosita.setMinimumSize(new java.awt.Dimension(20, 20));
         rosita.setOpaque(true);
+        rosita.setPreferredSize(new java.awt.Dimension(20, 20));
+        rosita.setRequestFocusEnabled(false);
+        rosita.setVerifyInputWhenFocusTarget(false);
         rosita.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 rositaMouseClicked(evt);
@@ -295,7 +407,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         moradoOscuro.setBackground(new java.awt.Color(51, 0, 51));
+        moradoOscuro.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        moradoOscuro.setMaximumSize(new java.awt.Dimension(20, 20));
+        moradoOscuro.setMinimumSize(new java.awt.Dimension(20, 20));
         moradoOscuro.setOpaque(true);
+        moradoOscuro.setPreferredSize(new java.awt.Dimension(20, 20));
+        moradoOscuro.setRequestFocusEnabled(false);
+        moradoOscuro.setVerifyInputWhenFocusTarget(false);
         moradoOscuro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 moradoOscuroMouseClicked(evt);
@@ -303,9 +421,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         radioactivo.setBackground(new java.awt.Color(153, 255, 0));
+        radioactivo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         radioactivo.setMaximumSize(new java.awt.Dimension(20, 20));
         radioactivo.setMinimumSize(new java.awt.Dimension(20, 20));
         radioactivo.setOpaque(true);
+        radioactivo.setPreferredSize(new java.awt.Dimension(20, 20));
+        radioactivo.setRequestFocusEnabled(false);
+        radioactivo.setVerifyInputWhenFocusTarget(false);
         radioactivo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 radioactivoMouseClicked(evt);
@@ -313,7 +435,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         mugre.setBackground(new java.awt.Color(102, 102, 0));
+        mugre.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mugre.setMaximumSize(new java.awt.Dimension(20, 20));
+        mugre.setMinimumSize(new java.awt.Dimension(20, 20));
         mugre.setOpaque(true);
+        mugre.setPreferredSize(new java.awt.Dimension(20, 20));
+        mugre.setRequestFocusEnabled(false);
+        mugre.setVerifyInputWhenFocusTarget(false);
         mugre.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mugreMouseClicked(evt);
@@ -321,9 +449,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         nube.setBackground(new java.awt.Color(204, 204, 255));
+        nube.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         nube.setMaximumSize(new java.awt.Dimension(20, 20));
         nube.setMinimumSize(new java.awt.Dimension(20, 20));
         nube.setOpaque(true);
+        nube.setPreferredSize(new java.awt.Dimension(20, 20));
+        nube.setRequestFocusEnabled(false);
+        nube.setVerifyInputWhenFocusTarget(false);
         nube.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 nubeMouseClicked(evt);
@@ -331,7 +463,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         oceano.setBackground(new java.awt.Color(51, 0, 204));
+        oceano.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        oceano.setMaximumSize(new java.awt.Dimension(20, 20));
+        oceano.setMinimumSize(new java.awt.Dimension(20, 20));
         oceano.setOpaque(true);
+        oceano.setPreferredSize(new java.awt.Dimension(20, 20));
+        oceano.setRequestFocusEnabled(false);
+        oceano.setVerifyInputWhenFocusTarget(false);
         oceano.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 oceanoMouseClicked(evt);
@@ -339,9 +477,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         infierno.setBackground(new java.awt.Color(255, 51, 51));
+        infierno.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         infierno.setMaximumSize(new java.awt.Dimension(20, 20));
         infierno.setMinimumSize(new java.awt.Dimension(20, 20));
         infierno.setOpaque(true);
+        infierno.setPreferredSize(new java.awt.Dimension(20, 20));
+        infierno.setRequestFocusEnabled(false);
+        infierno.setVerifyInputWhenFocusTarget(false);
         infierno.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 infiernoMouseClicked(evt);
@@ -349,9 +491,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         cerdo.setBackground(new java.awt.Color(255, 153, 153));
+        cerdo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         cerdo.setMaximumSize(new java.awt.Dimension(20, 20));
         cerdo.setMinimumSize(new java.awt.Dimension(20, 20));
         cerdo.setOpaque(true);
+        cerdo.setPreferredSize(new java.awt.Dimension(20, 20));
+        cerdo.setRequestFocusEnabled(false);
+        cerdo.setVerifyInputWhenFocusTarget(false);
         cerdo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cerdoMouseClicked(evt);
@@ -359,9 +505,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         donal.setBackground(new java.awt.Color(255, 153, 51));
+        donal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         donal.setMaximumSize(new java.awt.Dimension(20, 20));
         donal.setMinimumSize(new java.awt.Dimension(20, 20));
         donal.setOpaque(true);
+        donal.setPreferredSize(new java.awt.Dimension(20, 20));
+        donal.setRequestFocusEnabled(false);
+        donal.setVerifyInputWhenFocusTarget(false);
         donal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 donalMouseClicked(evt);
@@ -369,9 +519,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         defecacion.setBackground(new java.awt.Color(153, 102, 0));
+        defecacion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         defecacion.setMaximumSize(new java.awt.Dimension(20, 20));
         defecacion.setMinimumSize(new java.awt.Dimension(20, 20));
         defecacion.setOpaque(true);
+        defecacion.setPreferredSize(new java.awt.Dimension(20, 20));
+        defecacion.setRequestFocusEnabled(false);
+        defecacion.setVerifyInputWhenFocusTarget(false);
         defecacion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 defecacionMouseClicked(evt);
@@ -379,9 +533,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         moco.setBackground(new java.awt.Color(56, 220, 109));
+        moco.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         moco.setMaximumSize(new java.awt.Dimension(20, 20));
         moco.setMinimumSize(new java.awt.Dimension(20, 20));
         moco.setOpaque(true);
+        moco.setPreferredSize(new java.awt.Dimension(20, 20));
+        moco.setRequestFocusEnabled(false);
+        moco.setVerifyInputWhenFocusTarget(false);
         moco.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mocoMouseClicked(evt);
@@ -389,9 +547,13 @@ public class PanelColores extends javax.swing.JPanel {
         });
 
         swamp.setBackground(new java.awt.Color(153, 203, 91));
+        swamp.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         swamp.setMaximumSize(new java.awt.Dimension(20, 20));
         swamp.setMinimumSize(new java.awt.Dimension(20, 20));
         swamp.setOpaque(true);
+        swamp.setPreferredSize(new java.awt.Dimension(20, 20));
+        swamp.setRequestFocusEnabled(false);
+        swamp.setVerifyInputWhenFocusTarget(false);
         swamp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 swampMouseClicked(evt);
@@ -403,125 +565,123 @@ public class PanelColores extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(negro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(negro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(gris, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(gris, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(granate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(granate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(mostaza, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mostaza, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(verdeOscuro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(verdeOscuro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cianOscuro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cianOscuro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(morado, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(morado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(manteca, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(manteca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(hoja, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(hoja, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cieloNublado, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cieloNublado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(marron, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(marron, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(moradoOscuro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(moradoOscuro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(mugre, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mugre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(oceano, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(oceano, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(infierno, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(infierno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(defecacion, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(defecacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(swamp, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(swamp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(blanco, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(blanco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(grisClaro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(grisClaro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rojo, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(rojo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(amarillo, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(amarillo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(verde, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(verde, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cian, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cian, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(magenta, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(magenta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(mantequilla, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mantequilla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(menta, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(menta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cielo, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cielo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(naranja, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(naranja, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rosita, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(rosita, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(radioactivo, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(radioactivo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(nube, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(nube, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cerdo, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cerdo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(donal, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(donal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(moco, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(moco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(fieldTam, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(negro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(gris, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(negro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(gris, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(blanco, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(grisClaro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(blanco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(grisClaro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(granate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(rojo, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(granate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rojo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(cianOscuro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(verdeOscuro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(mostaza, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(morado, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(cianOscuro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(verdeOscuro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(mostaza, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(morado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(amarillo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(verde, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cian, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(magenta, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(amarillo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(verde, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cian, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(magenta, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(manteca, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(manteca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mantequilla, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(mantequilla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(hoja, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(hoja, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(menta, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(menta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(cieloNublado, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cieloNublado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cielo, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(cielo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(marron, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(marron, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(naranja, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(naranja, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -529,31 +689,29 @@ public class PanelColores extends javax.swing.JPanel {
                     .addComponent(fieldTam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(moradoOscuro, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moradoOscuro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rosita, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(rosita, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(mugre, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mugre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(radioactivo, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(radioactivo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(oceano, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(infierno, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(oceano, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(infierno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(nube, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cerdo, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(nube, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cerdo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(defecacion, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(donal, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(defecacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(donal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(swamp, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(moco, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(swamp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(moco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
