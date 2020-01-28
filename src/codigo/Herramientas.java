@@ -42,6 +42,8 @@ public class Herramientas extends javax.swing.JPanel {
         rellenoCheck = new javax.swing.JCheckBox();
         lapiz = new javax.swing.JButton();
         goma = new javax.swing.JButton();
+        pipeta = new javax.swing.JButton();
+        cubo = new javax.swing.JButton();
 
         jButton4.setText("jButton4");
 
@@ -54,7 +56,6 @@ public class Herramientas extends javax.swing.JPanel {
         });
 
         rectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Cuadrado.png"))); // NOI18N
-        rectangulo.setActionCommand("");
         rectangulo.setBorder(null);
         rectangulo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,6 +126,23 @@ public class Herramientas extends javax.swing.JPanel {
             }
         });
 
+        pipeta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Pipeta.png"))); // NOI18N
+        pipeta.setToolTipText("");
+        pipeta.setBorder(null);
+        pipeta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pipetaActionPerformed(evt);
+            }
+        });
+
+        cubo.setToolTipText("");
+        cubo.setBorder(null);
+        cubo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cuboActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -146,7 +164,14 @@ public class Herramientas extends javax.swing.JPanel {
                 .addComponent(molino, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(recta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(rellenoCheck, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(pipeta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(cubo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(rellenoCheck, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -166,6 +191,10 @@ public class Herramientas extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(molino, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(recta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(pipeta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cubo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(rellenoCheck)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -208,14 +237,24 @@ public class Herramientas extends javax.swing.JPanel {
         formaElegida = 100;
     }//GEN-LAST:event_gomaActionPerformed
 
+    private void pipetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pipetaActionPerformed
+        formaElegida = 314;
+    }//GEN-LAST:event_pipetaActionPerformed
+
+    private void cuboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuboActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cuboActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton circulo;
+    private javax.swing.JButton cubo;
     private javax.swing.JButton goma;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton lapiz;
     private javax.swing.JButton molino;
     private javax.swing.JButton pentagono;
+    private javax.swing.JButton pipeta;
     private javax.swing.JButton recta;
     private javax.swing.JButton rectangulo;
     private javax.swing.JCheckBox rellenoCheck;

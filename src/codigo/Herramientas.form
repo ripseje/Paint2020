@@ -44,7 +44,16 @@
               <EmptySpace max="32767" attributes="0"/>
               <Component id="recta" min="-2" pref="45" max="-2" attributes="0"/>
           </Group>
-          <Component id="rellenoCheck" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="pipeta" min="-2" pref="45" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="cubo" min="-2" pref="45" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="rellenoCheck" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -68,6 +77,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="molino" min="-2" pref="45" max="-2" attributes="0"/>
                   <Component id="recta" min="-2" pref="45" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="pipeta" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="cubo" min="-2" pref="45" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="rellenoCheck" min="-2" max="-2" attributes="0"/>
@@ -95,7 +109,6 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/img/Cuadrado.png"/>
         </Property>
-        <Property name="actionCommand" type="java.lang.String" value=""/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
         </Property>
@@ -208,6 +221,31 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gomaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="pipeta">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/Pipeta.png"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pipetaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="cubo">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cuboActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
