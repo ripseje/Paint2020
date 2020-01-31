@@ -12,22 +12,16 @@ import codigo.formas.Forma;
 import codigo.formas.Pentagono;
 import codigo.formas.Recta;
 import codigo.formas.Triangulo;
-import java.awt.AWTException;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.MouseInfo;
-import java.awt.Point;
-import java.awt.Robot;
+import java.awt.Shape;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.Random;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.JFileChooser;
-import javax.swing.JLabel;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
@@ -93,6 +87,11 @@ public class VentanaPaint extends javax.swing.JFrame {
         guardar = new javax.swing.JButton();
         jDialog2 = new javax.swing.JDialog();
         jFileChooser1 = new javax.swing.JFileChooser();
+        jDialog3 = new javax.swing.JDialog();
+        campoDtexto = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         panelColores2 = new codigo.PanelColores();
         herramientas1 = new codigo.Herramientas();
@@ -101,6 +100,7 @@ public class VentanaPaint extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         guardarMenu = new javax.swing.JMenuItem();
         importar = new javax.swing.JMenuItem();
+        nuevo = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         cancelar.setText("Cancelar");
@@ -153,6 +153,53 @@ public class VentanaPaint extends javax.swing.JFrame {
         jDialog2Layout.setVerticalGroup(
             jDialog2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jFileChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jLabel1.setText("Introduce el texto que quieras poner en pantalla");
+
+        jButton2.setText("Cancelar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setText("Confirmar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDialog3Layout = new javax.swing.GroupLayout(jDialog3.getContentPane());
+        jDialog3.getContentPane().setLayout(jDialog3Layout);
+        jDialog3Layout.setHorizontalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDialog3Layout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton3))
+                    .addComponent(campoDtexto)
+                    .addGroup(jDialog3Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jDialog3Layout.setVerticalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(campoDtexto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton2)
+                    .addComponent(jButton3))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -210,6 +257,14 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
         jMenu1.add(importar);
+
+        nuevo.setText("Nuevo");
+        nuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nuevoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(nuevo);
 
         jMenuBar1.add(jMenu1);
 
@@ -299,6 +354,9 @@ public class VentanaPaint extends javax.swing.JFrame {
             case 314 : Color pipet = new Color(buffer2.getRGB(evt.getX(), evt.getY()));
                        panelColores2.colorSeleccionado = pipet;
                 break;
+            case 737 : bufferGraphics2.setColor(panelColores2.colorSeleccionado);
+                       bufferGraphics2.drawString(herramientas1.textoEscrito, evt.getX(), evt.getY());
+                break;
         }
     }//GEN-LAST:event_jPanel1MousePressed
 
@@ -344,8 +402,8 @@ public class VentanaPaint extends javax.swing.JFrame {
     }//GEN-LAST:event_guardarMenuActionPerformed
 
     private void importarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_importarActionPerformed
-        jFileChooser1.setFileFilter(new FileNameExtensionFilter("arhivos de imagen jpg", "jpg"));
-        jFileChooser1.setFileFilter(new FileNameExtensionFilter("arhivos de imagen png", "png"));
+        jFileChooser1.setFileFilter(new FileNameExtensionFilter("Imágenes JPG", "jpg"));
+        jFileChooser1.setFileFilter(new FileNameExtensionFilter("Imágenes PNG", "png"));
         int seleccion = jFileChooser1.showOpenDialog(this);
         
         if (seleccion == JFileChooser.APPROVE_OPTION){
@@ -364,7 +422,18 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_importarActionPerformed
-    
+
+    private void nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nuevoActionPerformed
+        inicializaBuffers();
+    }//GEN-LAST:event_nuevoActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        jDialog3.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
     /**
      * @param args the command line arguments
      */
@@ -401,20 +470,26 @@ public class VentanaPaint extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField campoDtexto;
     private javax.swing.JButton cancelar;
     private javax.swing.JButton guardar;
     private javax.swing.JMenuItem guardarMenu;
     private codigo.Herramientas herramientas1;
     private javax.swing.JMenuItem importar;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JColorChooser jColorChooser1;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JDialog jDialog2;
+    private javax.swing.JDialog jDialog3;
     private javax.swing.JFileChooser jFileChooser1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenuItem nuevo;
     private codigo.PanelColores panelColores2;
     // End of variables declaration//GEN-END:variables
 }

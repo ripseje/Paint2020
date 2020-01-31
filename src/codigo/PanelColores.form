@@ -19,78 +19,78 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="2" attributes="0">
                   <Group type="102" alignment="2" attributes="0">
-                      <Component id="negro" max="32767" attributes="0"/>
+                      <Component id="negro" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="gris" max="32767" attributes="0"/>
+                      <Component id="gris" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="granate" max="32767" attributes="0"/>
+                      <Component id="granate" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="mostaza" max="32767" attributes="0"/>
+                      <Component id="mostaza" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="verdeOscuro" max="32767" attributes="0"/>
+                      <Component id="verdeOscuro" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="cianOscuro" max="32767" attributes="0"/>
+                      <Component id="cianOscuro" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="morado" max="32767" attributes="0"/>
+                      <Component id="morado" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="manteca" max="32767" attributes="0"/>
+                      <Component id="manteca" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="hoja" max="32767" attributes="0"/>
+                      <Component id="hoja" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="cieloNublado" max="32767" attributes="0"/>
+                      <Component id="cieloNublado" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="marron" max="32767" attributes="0"/>
+                      <Component id="marron" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="moradoOscuro" max="32767" attributes="0"/>
+                      <Component id="moradoOscuro" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="mugre" max="32767" attributes="0"/>
+                      <Component id="mugre" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="oceano" max="32767" attributes="0"/>
+                      <Component id="oceano" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="infierno" max="32767" attributes="0"/>
+                      <Component id="infierno" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="defecacion" max="32767" attributes="0"/>
+                      <Component id="defecacion" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="swamp" max="32767" attributes="0"/>
+                      <Component id="swamp" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="2" attributes="0">
-                      <Component id="blanco" max="32767" attributes="0"/>
+                      <Component id="blanco" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="grisClaro" max="32767" attributes="0"/>
+                      <Component id="grisClaro" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="rojo" max="32767" attributes="0"/>
+                      <Component id="rojo" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="amarillo" max="32767" attributes="0"/>
+                      <Component id="amarillo" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="verde" max="32767" attributes="0"/>
+                      <Component id="verde" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="cian" max="32767" attributes="0"/>
+                      <Component id="cian" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="magenta" max="32767" attributes="0"/>
+                      <Component id="magenta" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="mantequilla" max="32767" attributes="0"/>
+                      <Component id="mantequilla" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="menta" max="32767" attributes="0"/>
+                      <Component id="menta" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="cielo" max="32767" attributes="0"/>
+                      <Component id="cielo" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="naranja" max="32767" attributes="0"/>
+                      <Component id="naranja" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="rosita" max="32767" attributes="0"/>
+                      <Component id="rosita" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="radioactivo" max="32767" attributes="0"/>
+                      <Component id="radioactivo" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="nube" max="32767" attributes="0"/>
+                      <Component id="nube" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="cerdo" max="32767" attributes="0"/>
+                      <Component id="cerdo" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="donal" max="32767" attributes="0"/>
+                      <Component id="donal" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="moco" max="32767" attributes="0"/>
+                      <Component id="moco" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <Component id="jLabel1" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="fieldTam" min="-2" pref="30" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -101,93 +101,93 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="negro" max="32767" attributes="0"/>
-                  <Component id="gris" alignment="0" max="32767" attributes="0"/>
+                  <Component id="negro" max="-2" attributes="0"/>
+                  <Component id="gris" alignment="0" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="blanco" max="32767" attributes="0"/>
-                  <Component id="grisClaro" max="32767" attributes="0"/>
+                  <Component id="blanco" max="-2" attributes="0"/>
+                  <Component id="grisClaro" max="-2" attributes="0"/>
               </Group>
           </Group>
           <Group type="102" attributes="0">
-              <Component id="granate" max="32767" attributes="0"/>
+              <Component id="granate" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="rojo" max="32767" attributes="0"/>
+              <Component id="rojo" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="cianOscuro" max="32767" attributes="0"/>
-                  <Component id="verdeOscuro" max="32767" attributes="0"/>
-                  <Component id="mostaza" max="32767" attributes="0"/>
-                  <Component id="morado" alignment="1" max="32767" attributes="0"/>
+                  <Component id="cianOscuro" max="-2" attributes="0"/>
+                  <Component id="verdeOscuro" max="-2" attributes="0"/>
+                  <Component id="mostaza" max="-2" attributes="0"/>
+                  <Component id="morado" alignment="1" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="amarillo" alignment="1" max="32767" attributes="0"/>
-                  <Component id="verde" alignment="1" max="32767" attributes="0"/>
-                  <Component id="cian" alignment="1" max="32767" attributes="0"/>
-                  <Component id="magenta" alignment="1" max="32767" attributes="0"/>
+                  <Component id="amarillo" alignment="1" max="-2" attributes="0"/>
+                  <Component id="verde" alignment="1" max="-2" attributes="0"/>
+                  <Component id="cian" alignment="1" max="-2" attributes="0"/>
+                  <Component id="magenta" alignment="1" max="-2" attributes="0"/>
               </Group>
           </Group>
           <Group type="102" attributes="0">
-              <Component id="manteca" max="32767" attributes="0"/>
+              <Component id="manteca" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="mantequilla" max="32767" attributes="0"/>
+              <Component id="mantequilla" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <Component id="hoja" max="32767" attributes="0"/>
+              <Component id="hoja" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="menta" max="32767" attributes="0"/>
+              <Component id="menta" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <Component id="cieloNublado" max="32767" attributes="0"/>
+              <Component id="cieloNublado" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="cielo" max="32767" attributes="0"/>
+              <Component id="cielo" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <Component id="marron" max="32767" attributes="0"/>
+              <Component id="marron" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="naranja" max="32767" attributes="0"/>
+              <Component id="naranja" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" max="32767" attributes="0"/>
-                  <Component id="fieldTam" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="3" max="-2" attributes="0"/>
+                  <Component id="fieldTam" alignment="3" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <Component id="moradoOscuro" max="32767" attributes="0"/>
+              <Component id="moradoOscuro" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="rosita" max="32767" attributes="0"/>
+              <Component id="rosita" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <Component id="mugre" max="32767" attributes="0"/>
+              <Component id="mugre" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="radioactivo" max="32767" attributes="0"/>
+              <Component id="radioactivo" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="oceano" max="32767" attributes="0"/>
-                  <Component id="infierno" max="32767" attributes="0"/>
+                  <Component id="oceano" max="-2" attributes="0"/>
+                  <Component id="infierno" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="nube" max="32767" attributes="0"/>
-                  <Component id="cerdo" max="32767" attributes="0"/>
+                  <Component id="nube" max="-2" attributes="0"/>
+                  <Component id="cerdo" max="-2" attributes="0"/>
               </Group>
           </Group>
           <Group type="102" attributes="0">
-              <Component id="defecacion" max="32767" attributes="0"/>
+              <Component id="defecacion" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="donal" max="32767" attributes="0"/>
+              <Component id="donal" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <Component id="swamp" max="32767" attributes="0"/>
+              <Component id="swamp" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="moco" max="32767" attributes="0"/>
+              <Component id="moco" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
