@@ -12,16 +12,15 @@ import codigo.formas.Forma;
 import codigo.formas.Pentagono;
 import codigo.formas.Recta;
 import codigo.formas.Triangulo;
-import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.RenderingHints;
-import java.awt.Shape;
+import java.awt.Point;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.Random;
 import javax.imageio.ImageIO;
 import javax.swing.JFileChooser;
@@ -220,6 +219,9 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel1MouseClicked(evt);
+            }
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jPanel1MousePressed(evt);
             }
@@ -414,6 +416,20 @@ public class VentanaPaint extends javax.swing.JFrame {
                        }
                        bufferGraphics2.drawString(herramientas1.textoEscrito, evt.getX(), evt.getY());
                 break;
+            //Herramienta de relleno
+            //Almacena la x, la y, y el color de estos del lugar donde hayas 
+            //clicado y los pasa al metodo rellenar
+            case 32 : 
+                    int rellenaX = evt.getX();
+                    int rellenaY = evt.getY();
+                    int colorRgb = buffer.getRGB(rellenaX, rellenaY);
+                    Color rellenaColor = new Color(colorRgb);
+                    rellenar(rellenaX, rellenaY, rellenaColor, panelColores2.colorSeleccionado);
+                    jpanelGraphics.drawImage(buffer2, 0, 0, null);
+                    bufferGraphics2.drawImage(buffer2, 0, 0, null);
+                break;
+                
+            
         }
     }//GEN-LAST:event_jPanel1MousePressed
 
@@ -422,6 +438,7 @@ public class VentanaPaint extends javax.swing.JFrame {
         if(herramientas1.formaCont){
             miForma.dibujante(bufferGraphics2, evt.getX(), evt.getY());
         }
+        //Para que se puedan dibujar varios circulos sin estropearse
         if(herramientas1.formaElegida == 1 && herramientas1.formaCont2){
             miCirculo.dibujante(bufferGraphics2, evt.getX());
         }
@@ -436,6 +453,8 @@ public class VentanaPaint extends javax.swing.JFrame {
     }//GEN-LAST:event_cancelarActionPerformed
 
     private void guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarActionPerformed
+        //Quita el diálogo de selección de color y te cambia el color 7
+        //seleccionado por el que has elegido
         jDialog1.setVisible(false);
         panelColores2.colorSeleccionado = jColorChooser1.getColor();
         panelColores2.bloque.setBackground(panelColores2.colorSeleccionado);
@@ -462,6 +481,7 @@ public class VentanaPaint extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_guardarMenuActionPerformed
     
+    //Creamos un random para el spray
     private static int randomiz(int min, int max) {
 	Random r = new Random();
 	return r.nextInt((max - min) + 1) + min;
@@ -509,6 +529,35 @@ public class VentanaPaint extends javax.swing.JFrame {
         panelColores2.cordeX.setText("X: " + equis);
         panelColores2.cordeY.setText("Y: " + yyy);
     }//GEN-LAST:event_jPanel1MouseMoved
+
+    private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel1MouseClicked
+    
+    
+    //Metodo de la herramienta Cubo/Rellenar
+    //Utiliza el algoritmo de flooding
+    //Va creando puntos de coordenadas mientras la coordenada en la que este
+    //tenga el mismo color que en el lugar donde hayas hecho click
+    //Estos van cambiando el color de estos pixeles
+    public <Queue> void rellenar(int x, int y, Color oldCol, Color newCol) {//relleno usando recursion
+        java.util.Queue<Point> queue = new LinkedList<>();
+        queue.add(new Point(x, y));
+
+        while (!queue.isEmpty()) {
+            Point punto = queue.remove();
+            if (punto.x < 0 || punto.x >= buffer2.getWidth() || punto.y < 0 || punto.y >= buffer2.getHeight() || oldCol.getRGB() != buffer2.getRGB(punto.x, punto.y)) {
+                continue;
+            }
+            buffer2.setRGB(punto.x, punto.y, newCol.getRGB());
+            //jPanelGraphics.drawImage(buffer, 0, 0, null);
+            queue.add(new Point(punto.x - 1, punto.y));
+            queue.add(new Point(punto.x + 1, punto.y));
+            queue.add(new Point(punto.x, punto.y - 1));
+            queue.add(new Point(punto.x, punto.y + 1));
+        }
+    }
+    
     /**
      * @param args the command line arguments
      */
