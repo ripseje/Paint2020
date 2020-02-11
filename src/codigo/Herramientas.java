@@ -5,6 +5,9 @@
  */
 package codigo;
 
+import java.awt.Color;
+import java.awt.Graphics2D;
+
 /**
  *
  * @author Sergio
@@ -15,12 +18,20 @@ public class Herramientas extends javax.swing.JPanel {
     public int formaElegida;
     //indica si la figura se tiene que pintar rellena o no
     public boolean relleno = false;
+    public String textoEscrito = "";
+    public int tamText = 0;
+    public boolean cursiva = false;
+    public boolean negrita = false;
+    public boolean formaCont;
+    public boolean formaCont2;
+    
     
     /**
      * Creates new form Herramientas
      */
     public Herramientas() {
         initComponents();
+        jDialog1.setSize(330, 230);
     }
 
     /**
@@ -33,6 +44,16 @@ public class Herramientas extends javax.swing.JPanel {
     private void initComponents() {
 
         jButton4 = new javax.swing.JButton();
+        jDialog1 = new javax.swing.JDialog();
+        textField = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        confirmarBtn = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        fuenteTexto = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        negritaVer = new javax.swing.JRadioButton();
+        jLabel4 = new javax.swing.JLabel();
+        cursivaVer = new javax.swing.JRadioButton();
         circulo = new javax.swing.JButton();
         rectangulo = new javax.swing.JButton();
         pentagono = new javax.swing.JButton();
@@ -43,9 +64,90 @@ public class Herramientas extends javax.swing.JPanel {
         lapiz = new javax.swing.JButton();
         goma = new javax.swing.JButton();
         pipeta = new javax.swing.JButton();
-        cubo = new javax.swing.JButton();
+        letras = new javax.swing.JButton();
+        spray = new javax.swing.JButton();
 
         jButton4.setText("jButton4");
+
+        textField.setText("Ejemplo...");
+
+        jLabel1.setText("Introduce el texto que quieres que aparezca en pantalla");
+
+        confirmarBtn.setText("Confirmar");
+        confirmarBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                confirmarBtnActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setText("Tamaño del texto:");
+
+        fuenteTexto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fuenteTextoActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Negrita");
+
+        jLabel4.setText("Cursiva");
+
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDialog1Layout.createSequentialGroup()
+                        .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(textField))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jDialog1Layout.createSequentialGroup()
+                        .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addGroup(jDialog1Layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(negritaVer)))
+                        .addGap(18, 18, 18)
+                        .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(fuenteTexto)
+                            .addGroup(jDialog1Layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(cursivaVer)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog1Layout.createSequentialGroup()
+                        .addComponent(confirmarBtn)
+                        .addGap(101, 101, 101)))
+                .addContainerGap())
+        );
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(textField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(fuenteTexto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(negritaVer))
+                    .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(cursivaVer)
+                        .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18)
+                .addComponent(confirmarBtn)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         circulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Circulo.png"))); // NOI18N
         circulo.setBorder(null);
@@ -63,7 +165,7 @@ public class Herramientas extends javax.swing.JPanel {
             }
         });
 
-        pentagono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pentagono.png"))); // NOI18N
+        pentagono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pentagonoM.png"))); // NOI18N
         pentagono.setBorder(null);
         pentagono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,7 +173,7 @@ public class Herramientas extends javax.swing.JPanel {
             }
         });
 
-        triangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/triangulo.png"))); // NOI18N
+        triangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/trianguloM.png"))); // NOI18N
         triangulo.setBorder(null);
         triangulo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,11 +237,21 @@ public class Herramientas extends javax.swing.JPanel {
             }
         });
 
-        cubo.setToolTipText("");
-        cubo.setBorder(null);
-        cubo.addActionListener(new java.awt.event.ActionListener() {
+        letras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/letra (1) (1).png"))); // NOI18N
+        letras.setToolTipText("");
+        letras.setBorder(null);
+        letras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cuboActionPerformed(evt);
+                letrasActionPerformed(evt);
+            }
+        });
+
+        spray.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Spray.png"))); // NOI18N
+        spray.setToolTipText("");
+        spray.setBorder(null);
+        spray.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sprayActionPerformed(evt);
             }
         });
 
@@ -167,11 +279,11 @@ public class Herramientas extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(pipeta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cubo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(rellenoCheck, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(letras, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(rellenoCheck, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(spray, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -194,34 +306,43 @@ public class Herramientas extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(pipeta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cubo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(letras, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(spray, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(rellenoCheck)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void circuloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_circuloActionPerformed
+        formaCont = false;
+        formaCont2 = true;
         formaElegida = 1;
     }//GEN-LAST:event_circuloActionPerformed
 
     private void rectanguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rectanguloActionPerformed
+        formaCont = true;
         formaElegida = 4;
     }//GEN-LAST:event_rectanguloActionPerformed
 
     private void pentagonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pentagonoActionPerformed
+        formaCont = true;
         formaElegida = 5;
     }//GEN-LAST:event_pentagonoActionPerformed
 
     private void trianguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trianguloActionPerformed
+        formaCont = true;
         formaElegida = 3;
     }//GEN-LAST:event_trianguloActionPerformed
 
     private void molinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_molinoActionPerformed
+        formaCont = true;
         formaElegida = 256;
     }//GEN-LAST:event_molinoActionPerformed
 
     private void rectaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rectaActionPerformed
+        formaCont = true;
         formaElegida = 2;
     }//GEN-LAST:event_rectaActionPerformed
 
@@ -230,34 +351,68 @@ public class Herramientas extends javax.swing.JPanel {
     }//GEN-LAST:event_rellenoCheckActionPerformed
 
     private void lapizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lapizActionPerformed
+        formaCont = false;
         formaElegida = 0;
     }//GEN-LAST:event_lapizActionPerformed
 
     private void gomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gomaActionPerformed
+        formaCont = false;
         formaElegida = 100;
     }//GEN-LAST:event_gomaActionPerformed
 
     private void pipetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pipetaActionPerformed
+        formaCont = false;
         formaElegida = 314;
     }//GEN-LAST:event_pipetaActionPerformed
 
-    private void cuboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuboActionPerformed
+    private void letrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_letrasActionPerformed
+        formaCont = false;
+        formaElegida = 737;
+        jDialog1.setVisible(true);
+    }//GEN-LAST:event_letrasActionPerformed
+
+    private void confirmarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmarBtnActionPerformed
+        //Establece los parámetros del texto que va a aparecer donde hagamos click
+        textoEscrito = textField.getText();
+        tamText = (int) Integer.parseInt(fuenteTexto.getText());
+        cursiva = cursivaVer.isSelected();
+        negrita = negritaVer.isSelected();
+        jDialog1.setVisible(false);
+    }//GEN-LAST:event_confirmarBtnActionPerformed
+
+    private void fuenteTextoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fuenteTextoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cuboActionPerformed
+    }//GEN-LAST:event_fuenteTextoActionPerformed
+
+    private void sprayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sprayActionPerformed
+        formaCont = false;
+        formaElegida = 10;
+    }//GEN-LAST:event_sprayActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton circulo;
-    private javax.swing.JButton cubo;
+    private javax.swing.JButton confirmarBtn;
+    private javax.swing.JRadioButton cursivaVer;
+    private javax.swing.JTextField fuenteTexto;
     private javax.swing.JButton goma;
     private javax.swing.JButton jButton4;
+    private javax.swing.JDialog jDialog1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JButton lapiz;
+    private javax.swing.JButton letras;
     private javax.swing.JButton molino;
+    private javax.swing.JRadioButton negritaVer;
     private javax.swing.JButton pentagono;
     private javax.swing.JButton pipeta;
     private javax.swing.JButton recta;
     private javax.swing.JButton rectangulo;
     private javax.swing.JCheckBox rellenoCheck;
+    private javax.swing.JButton spray;
+    private javax.swing.JTextField textField;
     private javax.swing.JButton triangulo;
     // End of variables declaration//GEN-END:variables
 }

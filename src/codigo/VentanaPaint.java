@@ -12,22 +12,19 @@ import codigo.formas.Forma;
 import codigo.formas.Pentagono;
 import codigo.formas.Recta;
 import codigo.formas.Triangulo;
-import java.awt.AWTException;
+import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.MouseInfo;
-import java.awt.Point;
-import java.awt.Robot;
+import java.awt.RenderingHints;
+import java.awt.Shape;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.Random;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.JFileChooser;
-import javax.swing.JLabel;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
@@ -93,6 +90,11 @@ public class VentanaPaint extends javax.swing.JFrame {
         guardar = new javax.swing.JButton();
         jDialog2 = new javax.swing.JDialog();
         jFileChooser1 = new javax.swing.JFileChooser();
+        jDialog3 = new javax.swing.JDialog();
+        campoDtexto = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         panelColores2 = new codigo.PanelColores();
         herramientas1 = new codigo.Herramientas();
@@ -101,6 +103,7 @@ public class VentanaPaint extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         guardarMenu = new javax.swing.JMenuItem();
         importar = new javax.swing.JMenuItem();
+        nuevo = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         cancelar.setText("Cancelar");
@@ -155,6 +158,53 @@ public class VentanaPaint extends javax.swing.JFrame {
             .addComponent(jFileChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        jLabel1.setText("Introduce el texto que quieras poner en pantalla");
+
+        jButton2.setText("Cancelar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setText("Confirmar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDialog3Layout = new javax.swing.GroupLayout(jDialog3.getContentPane());
+        jDialog3.getContentPane().setLayout(jDialog3Layout);
+        jDialog3Layout.setHorizontalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDialog3Layout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton3))
+                    .addComponent(campoDtexto)
+                    .addGroup(jDialog3Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jDialog3Layout.setVerticalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(campoDtexto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton2)
+                    .addComponent(jButton3))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Paint98");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -164,6 +214,9 @@ public class VentanaPaint extends javax.swing.JFrame {
         jPanel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 jPanel1MouseDragged(evt);
+            }
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jPanel1MouseMoved(evt);
             }
         });
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -211,6 +264,14 @@ public class VentanaPaint extends javax.swing.JFrame {
         });
         jMenu1.add(importar);
 
+        nuevo.setText("Nuevo");
+        nuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nuevoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(nuevo);
+
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Edit");
@@ -252,22 +313,49 @@ public class VentanaPaint extends javax.swing.JFrame {
 
     private void jPanel1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseDragged
         bufferGraphics.drawImage(buffer2, 0, 0, null);
+        /*String equis = Integer.toString(evt.getX());
+        String yyy = Integer.toString(evt.getY());
+        panelColores2.cordeX.setText(equis);
+        panelColores2.cordeY.setText(yyy);*/
         switch(herramientas1.formaElegida){
             case 0 :
+                //Dibujo libre - Lapiz
+                //Varía tanto el color como el tamaño
                 panelColores2.cambiaTamaño();
                 bufferGraphics2.setColor(panelColores2.colorSeleccionado);
                 bufferGraphics2.fillOval(evt.getX(), evt.getY(), panelColores2.tam1, panelColores2.tam1);
                 break;
-            case 100 : 
+            case 10 :
+                //Spray
+                //Una variables con aleatorios para darle ese efecto de dispersión
+                //Por el resto de cosas es igual que el anterior
+                int parseX = evt.getX() + randomiz(-7, 7);
+                int parseY = evt.getY() + randomiz(-7, 7);
+                int parseX2 = evt.getX() + randomiz(-7, 7);
+                int parseY2 = evt.getY() + randomiz(-7, 7);
+                panelColores2.cambiaTamaño();
+                bufferGraphics2.setColor(panelColores2.colorSeleccionado);
+                bufferGraphics2.fillOval(parseX2, parseY2, panelColores2.tam1, panelColores2.tam1);
+                bufferGraphics2.fillOval(parseX, parseY, panelColores2.tam1, panelColores2.tam1);
+                break;
+            case 100 :
+                //Goma
+                //Funciona como el lapiz pero solo con el color blanco
                 panelColores2.cambiaTamaño();
                 bufferGraphics2.setColor(Color.WHITE);
                 bufferGraphics2.fillOval(evt.getX(), evt.getY(), panelColores2.tam1, panelColores2.tam1);
                 break;
+            //Círculo
             case 1 : miCirculo.dibujante(bufferGraphics, evt.getX()); break;
+            //Cuadrado
             case 4 : miForma.dibujante(bufferGraphics, evt.getX(), evt.getY());break;
+            //Pentágono
             case 5 : miForma.dibujante(bufferGraphics, evt.getX(), evt.getY()); break;
+            //Triángulo
             case 3 : miForma.dibujante(bufferGraphics, evt.getX(), evt.getY()); break;
+            //Estrella rara
             case 256 : miForma.dibujante(bufferGraphics, evt.getX(), evt.getY());break;
+            //Linea recta
             case 2 : miForma.dibujante(bufferGraphics, evt.getX(), evt.getY()); break;
                 
             
@@ -278,33 +366,63 @@ public class VentanaPaint extends javax.swing.JFrame {
     private void jPanel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MousePressed
         switch(herramientas1.formaElegida){
             case 0 : break;
+            //Dibuja el círculo del color seleccionado, con relleno o no, dependiendo de si está el checkbox seleccionado
             case 1 : miCirculo = new Circulo(evt.getX(), evt.getY(), 1, panelColores2.colorSeleccionado , herramientas1.relleno);
                      miCirculo.dibujante(bufferGraphics, evt.getX());
                 break;
+            //Dibuja el pentágono del color seleccionado, con relleno o no, dependiendo de si está el checkbox seleccionado
             case 5 : miForma = new Pentagono(evt.getX(), evt.getY(), 5, panelColores2.colorSeleccionado , herramientas1.relleno);
                      miForma.dibujante(bufferGraphics, evt.getX(), evt.getY());
                 break;
+            //Dibuja el cuadrado del color seleccionado, con relleno o no, dependiendo de si está el checkbox seleccionado
             case 4 : miForma = new Cuadrado(evt.getX(), evt.getY(), 4, panelColores2.colorSeleccionado , herramientas1.relleno);
                      miForma.dibujante(bufferGraphics, evt.getX(), evt.getY());
                 break;
+            //Dibuja el triángulo del color seleccionado, con relleno o no, dependiendo de si está el checkbox seleccionado
             case 3 : miForma = new Triangulo(evt.getX(), evt.getY(), 3, panelColores2.colorSeleccionado , herramientas1.relleno);
                      miForma.dibujante(bufferGraphics, evt.getX(), evt.getY());
                 break;
+            //Dibuja la estrella del color seleccionado, con relleno o no, dependiendo de si está el checkbox seleccionado
             case 256 : miForma = new Estrella(evt.getX(), evt.getY(), 256, panelColores2.colorSeleccionado , herramientas1.relleno);
                      miForma.dibujante(bufferGraphics, evt.getX(), evt.getY());
-                break; 
+                break;
+            //Dibuja la recta del color seleccionado, con relleno o no, dependiendo de si está el checkbox seleccionado
             case 2 : miForma = new Recta(evt.getX(), evt.getY(), 2, panelColores2.colorSeleccionado , false);
                      miForma.dibujante(bufferGraphics, evt.getX(), evt.getY());
                 break;
+            //Herramienta pipeta
+            //Establece como color seleccionado el sitio donde pulses con esta herramienta
             case 314 : Color pipet = new Color(buffer2.getRGB(evt.getX(), evt.getY()));
                        panelColores2.colorSeleccionado = pipet;
+                       panelColores2.bloque.setBackground(panelColores2.colorSeleccionado);
+                break;
+            //Herramienta de texto
+            //Modifica el texto que va a aparecer donde tú des click
+            //Se puede cambiar el tamaño, el color, si es cursiva/negrita/ambas/normal
+            case 737 : bufferGraphics2.setColor(panelColores2.colorSeleccionado);
+                       if(!herramientas1.cursiva && !herramientas1.negrita){
+                           bufferGraphics2.setFont(new Font("TimesRoman", Font.PLAIN, herramientas1.tamText));
+                       }
+                       else if(!herramientas1.cursiva && herramientas1.negrita){
+                           bufferGraphics2.setFont(new Font("TimesRoman", Font.BOLD, herramientas1.tamText));
+                       }
+                       else if(herramientas1.cursiva && !herramientas1.negrita){
+                           bufferGraphics2.setFont(new Font("TimesRoman", Font.ITALIC, herramientas1.tamText));
+                       }
+                       else if(herramientas1.cursiva && herramientas1.negrita){
+                           bufferGraphics2.setFont(new Font("TimesRoman", Font.ITALIC | Font.BOLD, herramientas1.tamText));
+                       }
+                       bufferGraphics2.drawString(herramientas1.textoEscrito, evt.getX(), evt.getY());
                 break;
         }
     }//GEN-LAST:event_jPanel1MousePressed
 
     private void jPanel1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseReleased
-        miForma.dibujante(bufferGraphics2, evt.getX(), evt.getY());
-        if(herramientas1.formaElegida == 1){
+        //Si formaCont es falso las formas no se podrán dibujar
+        if(herramientas1.formaCont){
+            miForma.dibujante(bufferGraphics2, evt.getX(), evt.getY());
+        }
+        if(herramientas1.formaElegida == 1 && herramientas1.formaCont2){
             miCirculo.dibujante(bufferGraphics2, evt.getX());
         }
     }//GEN-LAST:event_jPanel1MouseReleased
@@ -320,6 +438,7 @@ public class VentanaPaint extends javax.swing.JFrame {
     private void guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarActionPerformed
         jDialog1.setVisible(false);
         panelColores2.colorSeleccionado = jColorChooser1.getColor();
+        panelColores2.bloque.setBackground(panelColores2.colorSeleccionado);
     }//GEN-LAST:event_guardarActionPerformed
 
     private void guardarMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarMenuActionPerformed
@@ -342,10 +461,15 @@ public class VentanaPaint extends javax.swing.JFrame {
             
         }
     }//GEN-LAST:event_guardarMenuActionPerformed
-
+    
+    private static int randomiz(int min, int max) {
+	Random r = new Random();
+	return r.nextInt((max - min) + 1) + min;
+    }
+    
     private void importarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_importarActionPerformed
-        jFileChooser1.setFileFilter(new FileNameExtensionFilter("arhivos de imagen jpg", "jpg"));
-        jFileChooser1.setFileFilter(new FileNameExtensionFilter("arhivos de imagen png", "png"));
+        jFileChooser1.setFileFilter(new FileNameExtensionFilter("Imágenes JPG", "jpg"));
+        jFileChooser1.setFileFilter(new FileNameExtensionFilter("Imágenes PNG", "png"));
         int seleccion = jFileChooser1.showOpenDialog(this);
         
         if (seleccion == JFileChooser.APPROVE_OPTION){
@@ -364,7 +488,27 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_importarActionPerformed
-    
+
+    private void nuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nuevoActionPerformed
+        inicializaBuffers();
+    }//GEN-LAST:event_nuevoActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        jDialog3.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jPanel1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseMoved
+        //Castea las coordenadas del ratón en strings para 
+        //mostrarlas en los labels cordeX y cordeY
+        String equis = Integer.toString(evt.getX());
+        String yyy = Integer.toString(evt.getY());
+        panelColores2.cordeX.setText("X: " + equis);
+        panelColores2.cordeY.setText("Y: " + yyy);
+    }//GEN-LAST:event_jPanel1MouseMoved
     /**
      * @param args the command line arguments
      */
@@ -401,20 +545,26 @@ public class VentanaPaint extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField campoDtexto;
     private javax.swing.JButton cancelar;
     private javax.swing.JButton guardar;
     private javax.swing.JMenuItem guardarMenu;
     private codigo.Herramientas herramientas1;
     private javax.swing.JMenuItem importar;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JColorChooser jColorChooser1;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JDialog jDialog2;
+    private javax.swing.JDialog jDialog3;
     private javax.swing.JFileChooser jFileChooser1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenuItem nuevo;
     private codigo.PanelColores panelColores2;
     // End of variables declaration//GEN-END:variables
 }
